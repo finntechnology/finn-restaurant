@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finn & Salisu Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- this is header and navbar section -->
+    <header>
+      <nav class="navbar navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="/Images/logo.png"
+              alt="company logo"
+              style="height: 30px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-white"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <img src="/Images/logo.png" alt="company logo" height="30" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-black"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-black"
+                    aria-current="page"
+                    href="#about"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link text-bg-black dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <h4 class="text-black">Menu</h4>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#menu">Local Dishes</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#Intercontinent"
+                        >Intercontinent Dishes</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Make An Order</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ####################### -->
+    <!-- this is main and hero section -->
+    <main>
+      <!-- this is hero section -->
+      <section
+        id="heros"
+        class="d-flex justify-content-center align-items-center flex-column text-center"
+      >
+        <div id="heros---text">
+          <h1>FINN & SALISU</h1>
+          <h2>RESTAURANT</h2>
+          <div>
+            <button id="button"><a href="#">Make An Order</a></button>
+          </div>
+        </div>
+      </section>
+      <!-- ##################### -->
+      <!-- this is menu section -->
+      <section id="menu">
+        <div class="text-center my-5 mx-sm-5">
+          <h2 class="text-danger">MENU</h2>
+        </div>
+        <div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-gap-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/food menu/chicken-salad-with-vegetables-olives.jpg"
+                  class="product--image"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Vegetable</h5>
+                  <p class="card-text">
+                    vegetable dish that mixed with baked chicken.
+                  </p>
+                  <button id="orderbutton">$100</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/food menu/grilled-chicken-white-plate-with-salad-tomatoes-chilies-cut-into-pieces-wooden-table.jpg"
+                  class="product--image"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chicken $ Vegetable</h5>
+                  <p class="card-text">
+                    vegetable dish that mixed with baked chicken..
+                  </p>
+                  <button id="orderbutton">$100</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/food menu/tuna-salad.jpg"
+                  class="product--image"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Beaf Stake</h5>
+                  <p class="card-text">
+                    this precious meal is consisting of fresh vegetable and beaf
+                    stake.
+                  </p>
+                  <button id="orderbutton">$100</button>
+                </div>
+              </div>
+            </div>
+            <div id="Intercontinent" class="col">
+              <div class="card">
+                <img
+                  src="/food menu/Screenshot 2024-02-13 151717.png"
+                  class="product--image"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Chicken</h5>
+                  <p class="card-text">chicken salad with vegetables olives.</p>
+                  <button id="orderbutton">$100</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/food menu/Screenshot 2024-02-13 151924.png"
+                  class="product--image"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Happy Meal</h5>
+                  <p class="card-text">this meal is topnotch.</p>
+                  <button id="orderbutton">$100</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/food menu/Screenshot 2024-02-13 151454.png"
+                  class="product--image"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Stake & Source</h5>
+                  <p class="card-text">
+                    well reserved stake source for special client.
+                  </p>
+                  <button id="orderbutton">$100</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ######################## -->
+      <!-- this is about section -->
+      <section id="about">
+        <div
+          id="about---container"
+          class="d-flex justify-content-center align-items-center column-gap-3"
+        >
+          <div class="text-center mt-5">
+            <h2 class="text-danger mt-5">ABOUT US</h2>
+            <p>
+              Finn & Salisu is a popular fast food restaurant chain primarily
+              based in Nigeria. It specializes in serving a variety of
+              Intercontinent and Local dishes, including fried chicken, grilled
+              chicken, chicken burgers, and wraps. The restaurant is known for
+              its affordable prices, quick service, and tasty menu offerings.
+            </p>
+          </div>
+          <div class="mt-5">
+            <img src="/Images/signboard.png" alt="inside store" />
+          </div>
+        </div>
+      </section>
+      <!-- ################# -->
+      <!-- this contact section -->
+      <section id="contact" class="bg-danger pt-5">
+        <div id="contact---container">
+          <div id="contact---div" class="text-center pt-3">
+            <h2 class="text-center mb-3 text-white">Contact Us</h2>
+            <form action="">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="form---input text-center"
+                />
+              </div>
+              <br />
+              <div>
+                <input
+                  type="text"
+                  placeholder="Address"
+                  class="form---input text-center"
+                />
+              </div>
+              <br />
+              <div>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="form---input text-center"
+                />
+              </div>
+              <br />
+              <div>
+                <input
+                  type="text"
+                  placeholder="Mobile Number"
+                  class="form---input text-center"
+                />
+              </div>
+              <br />
+              <div>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form---input text-center"
+                />
+              </div>
+              <br />
+              <div>
+                <input
+                  type="date"
+                  placeholder="DOB"
+                  class="form---input text-center"
+                />
+              </div>
+              <br />
+              <div>
+                <textarea
+                  placeholder="Message"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  class="form---input text-center"
+                ></textarea>
+              </div>
+            </form>
+            <button id="contact---button">Continue</button>
+          </div>
+        </div>
+      </section>
+      <!-- ####################### -->
+    </main>
+    <!-- #################### -->
+    <!-- this is footer section -->
+    <footer class="text-center">
+      <hr />
+      <h4 class="text-white">
+        &copy;2024 Finn & Salisu Restaurant. All Right Reserved.
+      </h4>
+      <div id="socials" class="text-white">
+        <a href="#">
+          <i id="social---icon" class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="#"><i id="social---icon" class="fa-regular fa-x"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/finntechnology"
+          ><i id="social---icon" class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- ######################## -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/283ce58f28.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
